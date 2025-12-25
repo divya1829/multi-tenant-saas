@@ -60,3 +60,10 @@ Each tenant operates independently, ensuring secure and isolated access to its d
 ### Run Application (Single Command)
 ```bash
 docker-compose up --build
+
+
+## Demo Video
+
+YouTube Demo Link:  
+https://youtu.be/Z7fSJsyutyU
+
