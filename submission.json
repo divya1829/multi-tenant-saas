@@ -1,0 +1,26 @@
+{
+  "testCredentials": {
+    "superAdmin": {
+      "email": "admin@saas.com",
+      "password": "password123"
+    },
+    "tenantAdmin": {
+      "email": "tenant@saas.com",
+      "password": "password123"
+    },
+    "user": {
+      "email": "user@saas.com",
+      "password": "password123"
+    }
+  },
+  "services": {
+    "frontend": "http://localhost:3000",
+    "backend": "http://localhost:5000",
+    "healthCheck": "http://localhost:5000/health"
+  },
+  "database": {
+    "type": "PostgreSQL",
+    "name": "saasdb",
+    "autoInitialized": true
+  }
+}

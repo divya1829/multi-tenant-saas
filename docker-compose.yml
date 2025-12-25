@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  database:
+    image: postgres:15
+    container_name: database
+    environment:
+      POSTGRES_DB: saasdb
+      POSTGRES_USER: saasuser
+      POSTGRES_PASSWORD: saaspass
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      - "5000:5000"
+    environment:
+      DB_HOST: database
+      DB_NAME: saasdb
+      DB_USER: saasuser
+      DB_PASSWORD: saaspass
+    depends_on:
+      - database
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  pgdata:
