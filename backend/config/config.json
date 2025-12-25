@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "saasuser",
+    "password": "saaspass",
+    "database": "saasdb",
+    "host": "database",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "saasuser",
+    "password": "saaspass",
+    "database": "saasdb",
+    "host": "database",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "saasuser",
+    "password": "saaspass",
+    "database": "saasdb",
+    "host": "database",
+    "dialect": "postgres"
+  }
+}
