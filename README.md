@@ -56,6 +56,7 @@ Each tenant operates independently, ensuring secure and isolated access to its d
 - Docker
 - Docker Compose
 
+
 ### Run Application (Single Command)
 ```bash
 docker-compose up --build
